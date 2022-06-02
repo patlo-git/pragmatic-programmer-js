@@ -29,9 +29,6 @@ function formatAmount(value) {
 }
 
 function printLine(label, value) {
-  const line = label + ": " + formatAmount(value);
+  const line = label.toUpperCase() + ": " + formatAmount(value);
   console.log(line);
 }
-
-
-printBalance(accountExample);

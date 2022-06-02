@@ -19,10 +19,10 @@ function printBalance(account) {
 }
 
 function formatAmount(value) {
-  let string = '$' + Math.abs(value).toString() // -100 -> '$100'
+  let string = '$' + Math.abs(value).toString() // 100 -> '$100'
 
   if (value < 0) {
-    string = '-' + string; '-$100'
+    string = '-' + string; // '$100'
   }
 
   return string;
