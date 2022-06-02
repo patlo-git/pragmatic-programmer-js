@@ -30,4 +30,4 @@ const account = {
   averageBalance: 10000,
 };
 
-console.log(fees(account));
+console.log('Fees: ', fees(account));
