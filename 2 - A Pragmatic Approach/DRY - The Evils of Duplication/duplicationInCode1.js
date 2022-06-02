@@ -5,7 +5,10 @@ const accountExample = {
   credits: 5000,
   fees: -100,
   balance: 1000000,
-}
+};
+
+const button = document.querySelector('.print');
+button.addEventListener('click', () => printBalance(accountExample));
 
 function printBalance(account) {
   console.log('Debits: $' + account.debits.toString());
@@ -25,5 +28,3 @@ function printBalance(account) {
     console.log('Balance: $' + account.balance.toString());
   }
 }
-
-printBalance(accountExample);
