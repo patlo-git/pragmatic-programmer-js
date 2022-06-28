@@ -1,3 +1,4 @@
+// code is the same, yes, but knowledge is different
 function validateAge(value) {
   if (!Number.isInteger(value)) {
     throw new Error('Input needs to be a Number type.')

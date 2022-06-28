@@ -1,3 +1,5 @@
+// single source of truth
+// more explicitly states what's going on rather than comment
 function calculateAccountFees(account) {
   let fees = 0;
 

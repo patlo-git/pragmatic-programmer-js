@@ -29,6 +29,6 @@ function formatAmount(value) {
 }
 
 function printLine(label, value) {
-  const line = label.toUpperCase() + ": " + formatAmount(value);
+  const line = label.toUpperCase() + "--> " + formatAmount(value);
   console.log(line);
 }

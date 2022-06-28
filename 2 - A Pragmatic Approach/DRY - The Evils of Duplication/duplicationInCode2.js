@@ -1,3 +1,4 @@
+// DRYer approach to duplicationInCode1
 console.log('-- Example 2 --');
 
 const accountExample = {
@@ -11,6 +12,7 @@ const button = document.querySelector('.print');
 button.addEventListener('click', () => printBalance(accountExample));
 
 function printBalance(account) {
+  // could also change the next two lines
   console.log('Debits: $' + account.debits.toString());
   console.log('Credits: $' + account.credits.toString());
   console.log('Fees: ' + formatAmount(account.fees));
@@ -22,7 +24,7 @@ function formatAmount(value) {
   let string = '$' + Math.abs(value).toString() // 100 -> '$100'
 
   if (value < 0) {
-    string = '-' + string; // '$100'
+    string = '-' + string; // '-$100'
   }
 
   return string;

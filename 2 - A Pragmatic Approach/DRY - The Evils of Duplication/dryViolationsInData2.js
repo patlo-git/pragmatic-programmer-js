@@ -1,3 +1,5 @@
+// better version of 1
+// but this does sort of violate dry as far as performance goes b/c have to run the calcLength function each time rather than having a saved length like start and end
 class Line {
   constructor(start, end) {
     this.start = start;

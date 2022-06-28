@@ -1,3 +1,4 @@
+// literally 2x the lines of code. how is this any more DRY?
 class Line {
   constructor(start, end) {
     this.start = start;
